@@ -56,7 +56,6 @@ export const startEditExpense = (id, updates) => {
 }
 
 
-
 // SET_EXPENSES
 export const setExpenses = (expenses) => ({
   type: 'SET_EXPENSES',
