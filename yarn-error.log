@@ -1,0 +1,92 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread --dev
+
+PATH: 
+  /home/acm/.local/bin:/home/acm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.3.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/home/acm/Desktop/reactCourse/exp-app/node_modules/babel-cli/node_modules/babel-core/README.md'
+
+npm manifest: 
+  {
+    "name": "expensify",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Andrew Mead",
+    "license": "MIT",
+    "scripts": {
+      "build:dev": "webpack",
+      "build:prod": "webpack -p --env production",
+      "dev-server": "webpack-dev-server",
+      "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
+      "start": "node server/server.js",
+      "heroku-postbuild": "npm run build:prod"
+    },
+    "dependencies": {
+      "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+      "babel": "^6.23.0",
+      "babel-cli": "6.24.1",
+      "babel-loader": "^7.1.1",
+      "babel-plugin-transform-class-properties": "6.24.1",
+      "babel-plugin-transform-object-rest-spread": "6.23.0",
+      "babel-preset-env": "1.5.2",
+      "babel-preset-react": "6.24.1",
+      "css-loader": "^3.2.0",
+      "express": "^4.17.1",
+      "extract-text-webpack-plugin": "3.0.0",
+      "firebase": "^6.6.1",
+      "history": "^4.10.1",
+      "moment": "^2.24.0",
+      "node-sass": "^4.12.0",
+      "normalize.css": "7.0.0",
+      "numeral": "^2.0.6",
+      "react": "15.6.1",
+      "react-addons-shallow-compare": "15.6.0",
+      "react-bootstrap": "^1.0.0-beta.12",
+      "react-dates": "12.3.0",
+      "react-dom": "15.6.1",
+      "react-modal": "2.2.2",
+      "react-redux": "5.0.5",
+      "react-router-dom": "^5.0.1",
+      "redux": "3.7.2",
+      "redux-mock-store": "^1.5.3",
+      "redux-thunk": "^2.3.0",
+      "sass-loader": "6.0.6",
+      "style-loader": "0.18.2",
+      "upgrade": "^1.1.0",
+      "uuid": "3.1.0",
+      "validator": "8.0.0",
+      "webpack": "3.1.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.2",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
+      "@babel/plugin-transform-runtime": "^7.6.0",
+      "@babel/preset-env": "^7.6.2",
+      "@babel/preset-react": "^7.0.0",
+      "babel-core": "^7.0.0-bridge.0",
+      "cross-env": "^6.0.0",
+      "dotenv": "^8.1.0",
+      "enzyme": "2.9.1",
+      "enzyme-to-json": "1.5.1",
+      "jest": "^25.0.0",
+      "react-test-renderer": "15.6.1",
+      "webpack-cli": "^3.3.9",
+      "webpack-dev-server": "^2.9.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
